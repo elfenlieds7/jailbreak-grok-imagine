@@ -16,7 +16,7 @@ ENV/
 
 # Project specific
 data/auth/
-data/results.db
+# data/results.db  # 保留数据库以便跨环境同步
 output/
 logs/
 *.log
