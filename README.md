@@ -58,12 +58,15 @@ Key fields:
 
 ## Grok Imagine Overview
 
-| Mode | Input | Output | NSFW Option |
-|------|-------|--------|-------------|
-| **Text-to-Video** | Prompt | Video | Spicy mode available |
-| **Image-to-Video** | Image + Prompt | Video | No Spicy option currently |
+| Mode | Input | Output | Spicy Mode | Notes |
+|------|-------|--------|------------|-------|
+| **Text-to-Video** | Prompt only | Video | ✅ Available | Most permissive |
+| **Generated Image → Video** | Grok-generated image + Prompt | Video | ✅ Available | Spicy in dropdown |
+| **Uploaded Image → Video** | External image + Prompt | Video | ❌ **Not available** | Only Normal/Fun modes |
 
 **Model**: Aurora - autoregressive mixture-of-experts network
+
+**Important**: All tests 1-57 and Test 61 series were conducted in **Uploaded Image → Video** mode (no Spicy).
 
 ## GitHub Discussions
 

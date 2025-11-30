@@ -64,14 +64,19 @@ Based on Tests 52-61 and web research, Grok Imagine uses a **three-layer securit
 - Previous successes may become failures
 - Research results have **temporal validity issues**
 
-### Image-to-Video vs Text-to-Video
+### Grok Imagine Three Modes (Updated 2024-11-30)
 
-| Mode | Filter Strictness | Clothing Changes |
-|------|-------------------|------------------|
-| Text-to-Video | More permissive | Easier to generate |
-| Image-to-Video | Much stricter | HARD BLOCK on any state change |
+| Mode | Input | Spicy Mode | Filter Strictness |
+|------|-------|------------|-------------------|
+| **Text-to-Video** | Prompt only | ✅ Available | Most permissive |
+| **Generated Image → Video** | Grok-generated image + Prompt | ✅ Available | Medium |
+| **Uploaded Image → Video** | External image + Prompt | ❌ **Not available** | **Strictest** |
+
+**Critical Discovery**: Spicy Mode is **NOT available** for uploaded external images - only Normal/Fun modes appear in the dropdown.
 
 **User observation**: "单单用prompts可以很容易的生成naked，但图片+prompts似乎脱衣服就很难"
+
+**All tests in this research (Tests 1-57, Test 61 series) were conducted in Uploaded Image → Video mode without Spicy.**
 
 ### Why Prompt-Level Bypass Has Fundamental Limits
 
