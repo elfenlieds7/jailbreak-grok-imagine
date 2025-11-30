@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(git pull:*)",
+      "Bash(find:*)",
+      "WebSearch",
+      "WebFetch(domain:embracethered.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:baoyu.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
