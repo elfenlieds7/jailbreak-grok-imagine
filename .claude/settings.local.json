@@ -13,7 +13,12 @@
       "Bash(python3 -m pip install:*)",
       "Bash(brew install:*)",
       "Bash(pre-commit install)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(pre-commit autoupdate:*)",
+      "Bash(pre-commit install:*)",
+      "Bash(pre-commit run:*)"
     ],
     "deny": [],
     "ask": []

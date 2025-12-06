@@ -88,12 +88,14 @@ Stage 3 (Video editing): Trusts "already animated" → minimal checking
 ### Inferred Mechanism: Multi-Step Comprehensive Conclusion + Cache
 
 **Simple Model** (rejected):
+
 ```python
 S_final = S_base + S_adjust
 # Problem: Doesn't explain exceptions or variable tolerance
 ```
 
 **Advanced Model** (likely): Sequential Probability Ratio Test (SPRT)
+
 ```python
 # H0: Content is SAFE, H1: Content is NSFW
 E₀ = log(P(safe|image) / P(nsfw|image))  # Initial evidence
@@ -130,12 +132,14 @@ else: CONTINUE (gray zone, allow but monitor)
 ### Strategic Implications
 
 **For Exploitation**:
+
 - **Speed**: Complete all edits immediately after successful animation (before cache expires)
 - **Session persistence**: Keep browser/session alive, avoid logout
 - **Cache miss detection**: If simple prompt blocks → regenerate from Stage 1
 - **Context dilution**: Insert innocent prompts to maintain high E value
 
 **For Detection**:
+
 - Order of prompts matters (if SPRT)
 - Gradual escalation better than sudden risky prompts
 - Monitor for sudden blocks = E approaching threshold
@@ -216,6 +220,7 @@ All Tests 1-58b conducted in **strictest mode** (Uploaded Image→Video, no Spic
 **Status**: Discovered 2025-12-06, NOT yet systematically tested
 
 **Strategy**:
+
 1. Re-test baseline prompts (ref_019, Test 42) in this mode
 2. Re-test failed bypass techniques (Tests 52-58b)
 3. Test clothing state changes (previously hard-blocked)
@@ -227,6 +232,7 @@ All Tests 1-58b conducted in **strictest mode** (Uploaded Image→Video, no Spic
 ### Priority 2: SPRT Hypothesis Validation
 
 **Experiments**:
+
 1. **Order dependency**: "A→B→C" vs "C→B→A" (should differ if SPRT)
 2. **Evidence accumulation**: 10 mild adjustments (should block after 6-8 if SPRT)
 3. **Context compound**: Single complex prompt vs sequential simple prompts
@@ -235,6 +241,7 @@ All Tests 1-58b conducted in **strictest mode** (Uploaded Image→Video, no Spic
 ### Priority 3: Advanced Bypass Techniques (Untested)
 
 From 2025 research (NOT tested on Grok Imagine):
+
 - **ASCII Smuggling** (Unicode Tags U+E0000): Grok vulnerable per Embrace The Red
 - **SEAL** (Stacked Encryption): 80%+ ASR on reasoning models
 - **Mousetrap** (Chain of Iterative Chaos): 86-98% ASR on LRMs
@@ -246,12 +253,14 @@ From 2025 research (NOT tested on Grok Imagine):
 ## 6. Research Status
 
 **Completed**:
+
 - ✅ Basic testing (Tests 1-37): Aurora limitations mapped
 - ✅ Content boundaries (Tests 38-51): Safe/unsafe content identified
 - ✅ Bypass testing (Tests 52-61): Filter architecture discovered
 - ✅ Mode comparison: Grok-Generated Image→Video identified as weakest
 
 **Key Conclusions**:
+
 1. **Three-layer security** + **cache-based scoring** + likely **SPRT**
 2. **Trust-based security flaw**: System trusts own generated content
 3. **Adaptive moderation**: Filter rules update dynamically
@@ -265,15 +274,18 @@ From 2025 research (NOT tested on Grok Imagine):
 ## References
 
 **Core**:
+
 - [Grok Image Generation Release | xAI](https://x.ai/news/grok-image-generation-release)
 - [arXiv: Unmasking the Canvas](https://arxiv.org/html/2505.04146v1) - Image generation jailbreak benchmark
 
 **2025 Research**:
+
 - [Embrace The Red: Grok Security](https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/) - ASCII smuggling
 - [arXiv: SEAL](https://arxiv.org/html/2505.16241v1) - Stacked encryption, 80%+ ASR
 - [arXiv: Mousetrap](https://arxiv.org/html/2502.15806v2) - Chain of Iterative Chaos, 86-98% ASR
 
 **Moderation Guides**:
+
 - [Aiarty - Grok Imagine Spicy Mode](https://www.aiarty.com/ai-video-generator/grok-imagine-spicy-mode.htm)
 - [Sider AI - What Is Grok Imagine](https://sider.ai/blog/ai-tools/what-is-grok-imagine)
 

@@ -13,6 +13,7 @@ data/images/
 ## Input Image
 
 ### `inputs/grok-image-ac0bad37-8424-41c9-8e6e-699d9c458a79.png`
+
 - **Description**: THE ONLY input image used for all image-to-video tests
 - **Details**: Female character in Y-shape suspension bondage pose
 - **Pose**: Arms bound together raised overhead, legs extended diagonally with ankles bound
@@ -69,6 +70,7 @@ All image-to-video tests use the SAME input image with different prompts.
 ## Research Value
 
 These screenshots document:
+
 1. **Aurora Physics Understanding**: Suspension pose rendering variations
 2. **Motion Generation**: Bumping, swinging, trembling across different prompts
 3. **Filter Sensitivity Evolution**: From safe to blocked outputs

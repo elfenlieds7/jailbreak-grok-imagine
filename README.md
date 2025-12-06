@@ -77,11 +77,13 @@ jailbreak-grok-imagine/
 ## Research Status
 
 **Completed (Uploaded Image Mode)**:
+
 - ✅ Tests 1-58b on strictest mode
 - ✅ Bypass techniques: Character smuggling, word flip, abstraction, code-switching (all failed/partial)
 - ✅ Best results: Extreme Abstraction (4 blocks), Phrase-Level Code-Switching (0 blocks, not reproducible)
 
 **Next Priority**:
+
 - 🔥 Grok-Generated Image→Video systematic testing
 - 🔥 SPRT hypothesis validation (order dependency, context compound)
 
@@ -90,10 +92,12 @@ jailbreak-grok-imagine/
 ## References
 
 **Core**:
+
 - [Grok Image Generation | xAI](https://x.ai/news/grok-image-generation-release)
 - [arXiv: Unmasking the Canvas](https://arxiv.org/html/2505.04146v1)
 
 **2025 Research** (untested on Grok):
+
 - [SEAL - Stacked Encryption](https://arxiv.org/html/2505.16241v1) - 80%+ ASR
 - [Mousetrap - Iterative Chaos](https://arxiv.org/html/2502.15806v2) - 86-98% ASR
 - [Embrace The Red - Grok Analysis](https://embracethered.com/blog/posts/2024/security-probllms-in-xai-grok/) - ASCII smuggling
