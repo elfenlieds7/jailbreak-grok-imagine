@@ -8,7 +8,12 @@
       "WebFetch(domain:embracethered.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:arxiv.org)",
-      "WebFetch(domain:baoyu.io)"
+      "WebFetch(domain:baoyu.io)",
+      "Read(//Users/songym/cursor-projects/nexus/**)",
+      "Bash(python3 -m pip install:*)",
+      "Bash(brew install:*)",
+      "Bash(pre-commit install)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

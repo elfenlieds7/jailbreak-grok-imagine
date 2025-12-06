@@ -1,0 +1,18 @@
+# Lightweight pre-commit hooks for research repo (<3s)
+# Focus on basic file hygiene for markdown/csv/txt files
+
+repos:
+  # Fast file checks (< 1s)
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^data/results/manual_tests\.csv$  # CSV may have intentional trailing spaces
+      - id: end-of-file-fixer
+        exclude: ^data/results/manual_tests\.csv$  # CSV may have specific format
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=5000']  # Allow up to 5MB (research images)
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
