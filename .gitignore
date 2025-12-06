@@ -14,6 +14,9 @@ ENV/
 *.swp
 *.swo
 
+# Claude Code local settings
+.claude/settings.local.json
+
 # Project specific
 data/auth/
 # data/results.db  # 保留数据库以便跨环境同步
