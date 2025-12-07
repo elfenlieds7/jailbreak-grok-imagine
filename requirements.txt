@@ -1,0 +1,4 @@
+# Grok Web Connector - for fetching video metadata from Grok web API
+# Provides: list_posts(), get_post_details(), get_asset_file_size(), validate_auth()
+# Use to get mode (img2vid/txt2vid/upload2vid) and other metadata for videos
+git+https://github.com/elfenlieds7/grok-web-connector.git
